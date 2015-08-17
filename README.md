@@ -6,21 +6,29 @@ You've spent the past 5 weeks learning about JavaScript, Node.js, various framew
 
 ## Getting Started
 
-From the command line: 
-
-  create a new directory (```mkdir [name_of_directory]```)
-  ```cd``` into it
-  run ```git init```, initializing a new git repo
-  run ``` npm init``` and follow the prompts to initialize a package.json
-  
 On Github.com:
   
-  from your Github page on the repositories panel, create a new repo named 2015-07-Final-Assessment.
-  copy the remote address (git@github.com:your_username/blah.git)
+  From your Github page on the repositories panel, create a new repo named 2015-07-Final-Assessment.
+  copy the remote address (git@github.com:your_username/2015-07-Final-Assessment.git)
+
+From the command line: 
+
+  Create a new project directory and cd into it
+  ```
+  mkdir [name_of_directory]
+  cd [name_of_directory]
+  ```
   
-From the command line:
+  Initialize your project as a Git repo and set Github as a remote
+  ```
+  git init
+  git remote add origin {git_url from above}
+  ```
   
-  run ```git remote add origin [remote]``` to add your github repo as a remote
+  Initialize your project as a Node project (follow the prompts)
+  ```
+  npm init
+  ```
   
 Congrats, you've made a project from scratch! Dependencies can be installed using ```npm install --save [package_name]```. If you want to use bower, you can set it up using ```bower init```. Time to build an app!
 
