@@ -10,12 +10,12 @@ You've spent the past 5 weeks learning about JavaScript, Node.js, various framew
 
 ## Getting Started
 
-*On Github.com:*
+**On Github.com:**
   
   From your Github page on the repositories panel, create a new repo named 2015-07-Final-Assessment.
   copy the remote address (git@github.com:your_username/2015-07-Final-Assessment.git)
 
-*From the command line:*
+**From the command line:**
 
   Create a new project directory and cd into it
   ```
@@ -44,4 +44,4 @@ Congrats, you've made a project from scratch! Dependencies can be installed usin
   - [ ] Allow users to search for a gallery by tag and display the first page of that gallery
   - [ ] Allow users to have a session using cookies
   - [ ] Allow users to save selected images to a database
-  - [ ] Hitting the route /saved should display all saved images from that user
+  - [ ] Should display images and image data on the /shared route
