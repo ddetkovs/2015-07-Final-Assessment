@@ -55,11 +55,8 @@ Congrats, you've made a project from scratch! Dependencies can be installed usin
 
 ## Helpful Links
 
-[Giphy API Docs] (https://github.com/giphy/GiphyAPI)
-
-[Github OAuth Docs] (https://developer.github.com/v3/oauth/)
-
-[Github Authentication] (https://developer.github.com/guides/basics-of-authentication/)
-
-[Node Filesystem Docs] (https://nodejs.org/api/fs.html)
+[Giphy API Docs] (https://github.com/giphy/GiphyAPI)  
+[Github OAuth Docs] (https://developer.github.com/v3/oauth/)  
+[Github Authentication] (https://developer.github.com/guides/basics-of-authentication/)  
+[Node Filesystem Docs] (https://nodejs.org/api/fs.html)  
 
