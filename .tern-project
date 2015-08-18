@@ -1,0 +1,21 @@
+{
+  "libs": [
+    "browser",
+    "jquery"
+  ],
+  "loadEagerly": [
+    "./routes/**/*.js",
+    "*.js"
+  ],
+  "plugins": {
+    "node":{
+      "dontLoad":{},
+      "load":{},
+      "modules":{}
+    },
+    "angular": {
+
+    }
+  }
+
+}
