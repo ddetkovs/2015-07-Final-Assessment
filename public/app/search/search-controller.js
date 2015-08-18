@@ -5,6 +5,7 @@
     ])
 
     .controller('SearchController', function(gifs) {
-
+      console.log(gifs);
+      this.gifs = gifs.data;
     });
 }());

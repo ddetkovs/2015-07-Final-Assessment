@@ -1,5 +1,5 @@
 var express = require('express');
-var mongoose = require('mongoose');
+// var mongoose = require('mongoose');
 
 var app = express();
 
@@ -7,13 +7,11 @@ var app = express();
 
 var api = require('./routes/routes.js');
 
-app.set('port', process.env.PORT || 3000);
-
 app.use('/', express.static(__dirname + '/public'));
 
 app.use('/api', api);
 
-var server = app.listen(function() {
+var server = app.listen(process.env.PORT || 3000, function() {
   console.log('Server is listening on ', server.address().port);
 });
 

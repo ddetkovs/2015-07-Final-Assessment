@@ -1,2 +1,16 @@
-<ui-view></ui-view>
+<md-toolbar>
+  <div class="md-toolbar-tools">
+    <span flex></span>
+    <md-button ng-if="!ctrl.isAuth()" ui-sref="signIn" aria-label="SignIn">
+      Sign In
+    </md-button>
+    <md-button ng-if="!ctrl.isAuth()" ng-if="" ui-sref="signUp" aria-label="SignUp">
+      Sign Up
+    </md-button>
+    <md-button ng-if="ctrl.isAuth()"  ui-sref="signOut" aria-label="SignOut">
+      Sign Out
+    </md-button>
+  </div>
+</md-toolbar>
 
+<md-content layout="column" flex ui-view=""></md-content>
