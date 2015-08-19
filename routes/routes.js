@@ -3,6 +3,9 @@
 var express = require('express');
 var request = require('request-promise');
 
+var api = function (passport) {
+  
+}
 var api = express.Router();
 
 api.get('/search', function(req, res, next) {

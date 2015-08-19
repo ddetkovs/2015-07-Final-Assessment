@@ -3,10 +3,10 @@
 
   angular.module('app.auth.config', [
     'ui.router',
-    'app.auth.controller',
     'app.auth.interceptor',
     'app.auth.signIn.config',
-    'app.auth.signUp.config'
+    'app.auth.signUp.config',
+    'app.auth.signOut.config'
   ])
 
   .config(function($httpProvider) {
@@ -28,6 +28,13 @@
     }
 
     $rootScope.$on('$stateChangeStart', authStateInterceptor);
+
+    $rootScope.$on('$stateChangeError',
+      function(event, toState, toParams, fromState, fromParams, error) {
+        if(error.status === 401){
+           $state.go('signIn');
+        }
+      });
   });
 
 }());

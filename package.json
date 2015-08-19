@@ -18,6 +18,9 @@
   "homepage": "https://github.com/ddetkovs/2015-07-Final-Assessment#readme",
   "dependencies": {
     "express": "^4.13.3",
+    "express-session": "^1.11.3",
+    "passport": "^0.2.2",
+    "passport-github": "^0.1.5",
     "request-promise": "^0.4.3"
   }
 }

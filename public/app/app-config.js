@@ -4,7 +4,8 @@
     'ngMaterial',
 
     'app.search.config',
-    'app.services.auth'
+    'app.services.auth',
+    'app.auth.config'
   ])
 
   .config(function($stateProvider) {

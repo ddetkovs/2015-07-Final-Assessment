@@ -2,7 +2,7 @@
 
   angular.module('app.auth.interceptor', [])
 
-  .factory('AttachTokens', function($window) {
+  .factory('AttachTokens', function($window, $q, $location) {
 
     return {
       request: function(object) {

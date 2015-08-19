@@ -1,0 +1,16 @@
+<div flex layout="column" layout-align="center center">
+  <div>
+    <md-input-container>
+      <label>Username</label>
+      <input ng-model="ctrl.user.userName">
+    </md-input-container>
+
+    <md-input-container>
+      <label>Password</label>
+      <input type="password" ng-model="ctrl.user.password">
+    </md-input-container>
+
+    <md-button ng-click="ctrl.signUp()">Sign Up</md-button>
+
+  </div>
+</div>

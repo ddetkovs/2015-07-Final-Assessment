@@ -12,7 +12,7 @@
       .state('signUp', {
         url: '/signUp',
         templateUrl: 'app/auth/sign-up/sign-up.tpl.html',
-        controller: 'signUpController',
+        controller: 'SignUpController',
         controllerAs: 'ctrl'
       });
 
