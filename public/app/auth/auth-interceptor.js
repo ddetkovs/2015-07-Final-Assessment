@@ -6,7 +6,7 @@
 
     return {
       request: function(object) {
-        var jwt = $window.localStorage.getItem('com.shortly');
+        var jwt = $window.localStorage.getItem('com.app');
         if (jwt) {
           object.headers['x-access-token'] = jwt;
         }

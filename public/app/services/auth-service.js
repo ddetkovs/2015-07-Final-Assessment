@@ -1,9 +1,9 @@
 (function() {
   'use strict';
 
-  angular.module('app.services.auth', [])
+  angular.module('app.services.auth', ['ngCookies'])
 
-  .service('AuthService', function($http, $state, $window) {
+  .service('AuthService', function($http, $state, $window, $cookies) {
     this.signIn = function(user) {
       return $http({
           method: 'POST',
@@ -27,7 +27,9 @@
     };
 
     this.isAuth = function() {
-      return !!$window.localStorage.getItem('com.app');
+      console.log($cookies.getAll());
+      console.log($cookies.get('connect.sid'));
+      return !!$cookies.get('connect.sid');
     };
 
     this.signOut = function() {
